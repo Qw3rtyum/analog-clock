@@ -5,7 +5,7 @@
  * @author Qw3rtyum 
  * @version 0.1
  */
-public class System
+public class GearSystem
 {
     private int numGears;
     private boolean isRunning;
@@ -13,7 +13,7 @@ public class System
     /**
      * Constructor de la clase System
      */
-    public System(int newGears, boolean state)
+    public GearSystem(int newGears, boolean state)
     {
         numGears = newGears;
         isRunning = state;
@@ -35,5 +35,23 @@ public class System
     
     public boolean getIsRunning() {
         return isRunning;
+    }
+    
+    /**
+     * Imprime por pantalla los atributos y valores de la clase
+     */
+    public void imprimirDetalles()
+    {
+        String state;
+        if (isRunning == true)
+        {
+            state = "Sí";
+        }
+        else
+        {
+            state = "No";
+        }
+        System.out.println("Número de engranajes: " + numGears);
+        System.out.println("¿Encendido?: " + state);
     }
 }
