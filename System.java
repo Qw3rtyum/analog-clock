@@ -18,4 +18,22 @@ public class System
         numGears = newGears;
         isRunning = state;
     }
+    
+    public int setNumGears(int newGears) {
+        numGears = newGears;
+        return this.numGears;
+    }
+    
+    public boolean setIsRunning(boolean state) {
+        isRunning = state;
+        return isRunning;
+    }
+    
+    public int getNumGears() {
+        return numGears;
+    }
+    
+    public boolean getIsRunning() {
+        return isRunning;
+    }
 }
