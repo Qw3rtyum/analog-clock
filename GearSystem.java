@@ -1,10 +1,3 @@
-
-/**
- * Write a description of class System here.
- * 
- * @author Qw3rtyum 
- * @version 0.1
- */
 public class GearSystem
 {
     private int numGears;
@@ -19,14 +12,12 @@ public class GearSystem
         isRunning = state;
     }
     
-    public int setNumGears(int newGears) {
-        numGears = newGears;
-        return this.numGears;
+    public void setNumGears(int newGears) {
+        this.numGears = newGears;
     }
     
-    public boolean setIsRunning(boolean state) {
-        isRunning = state;
-        return isRunning;
+    public void setIsRunning(boolean state) {
+        this.isRunning = state;
     }
     
     public int getNumGears() {
