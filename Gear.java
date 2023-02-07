@@ -10,4 +10,19 @@ public class Gear
         diameter = newDiameter;
         gearSystem = new GearSystem(newGears, state);
     }
+    
+    public int getNumTeeth()
+    {
+        return numTeeth;
+    }
+    
+    public double getDiameter()
+    {
+        return diameter;
+    }
+    
+    public GearSystem getGearSystem()
+    {
+        return gearSystem;
+    }
 }
