@@ -25,4 +25,20 @@ public class Gear
     {
         return gearSystem;
     }
+    
+    public void setNumTeeth(int newTeeth)
+    {
+        this.numTeeth = newTeeth;
+    }
+    
+    public void setDiameter(double newDiameter)
+    {
+        this.diameter = newDiameter;
+    }
+    
+    public void setGearSystem(int newGears, boolean state)
+    {
+        gearSystem.setNumGears(newGears);
+        gearSystem.setIsRunning(state);
+    }
 }
