@@ -41,4 +41,14 @@ public class Gear
         gearSystem.setNumGears(newGears);
         gearSystem.setIsRunning(state);
     }
+    
+    public void imprimirDetalles()
+    {
+        System.out.println("-Engranaje-");
+        System.out.println("Numero de dientes: " + numTeeth);
+        System.out.println("Diametro: " + diameter);
+        System.out.println();
+        System.out.println("-Sistema-");
+        gearSystem.imprimirDetalles();
+    }
 }
